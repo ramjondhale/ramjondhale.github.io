@@ -2,11 +2,15 @@
 <html lang="en">
 
 <head>
+    <title>Ram's Portfolio</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ram's Portfolio</title>
+
     <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@500&family=Russo+One&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="default.css">
+
+    <link id="theme-style" rel="stylesheet" href="">
 
 </head>
 
@@ -32,10 +36,10 @@
                     <img id="profile-pic" src="images/pp.jpeg" alt="">
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                     <div class="theme-options-wrapper">
-                        <div id="light-mode" class="theme-dot"></div>
-                        <div id="blue-mode" class="theme-dot"></div>
-                        <div id="green-mode" class="theme-dot"></div>
-                        <div id="purple-mode" class="theme-dot"></div>
+                        <div data-mode="light" id="light-mode" class="theme-dot"></div>
+                        <div data-mode="blue" id="blue-mode" class="theme-dot"></div>
+                        <div data-mode="green" id="green-mode" class="theme-dot"></div>
+                        <div data-mode="purple" id="purple-mode" class="theme-dot"></div>
                     </div>
                     <p id="setting-note">This settings will be saved for <br> your next visit</p>
                 </div>
@@ -59,21 +63,107 @@
     <section class="s2">
         <div class="main-container">
             <div class="about-wrapper">
+                <div class="about-me">
+                    <h4>More about me</h4>
+                    <p>
+                        I build new projects just to tickle my brain and love teaching others how they're made.
+                    </p>
+                    <p>
+                        While I keep busy teaching courses, I still take interviews in search of a great team & projects that interest me.
+                    </p>
+                    <hr>
+                    <h4>TOP EXPERTISE</h4>
+                    <p>Fullstack developer with primary focus on Django + React: <a target="_blank" href="Ram_Resume.pdf">Download Resume</a> </p>
 
+                    <div id="skills">
+                        <ul>
+                            <li>Python</li>
+                            <li>Django</li>
+                            <li>JavaScript</li>
+                            <li>React</li>
+                            <li>Postgres</li>
+                        </ul>
+                        <ul>
+                            <li>Google Maps API</li>
+                            <li>JS Charts</li>
+                            <li>AWS (RDS/S3)</li>
+                            <li>Heroku</li>
+                            <li>HTML/CSS</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-links">
+                    <img id="social-img" src="images/follow.jpg" alt="">
+                    <h3>Find me on Twitter & Youtube
+                    </h3>
+                    <a href="#" target="_blank">Youtube: @DennisIvy</a>
+                    <br>
+                    <a href="#" target="_blank">Youtube: @DennisIvy11</a>
+                </div>
             </div>
         </div>
     </section>
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Some of my past projects</h3>
+            <div class="post-wrapper">
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/dash.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Laboratory Management System</h6>
+                            <p class="post-intro">Designed built & mantained a the lab managment system for FOI Laboratories</p>
+                            <a href="post.html">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/ecom.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title">Online Store - CoursePost Title</h6>
+                            <p class="post-intro">Online store with paypal payments intergration and guest user shopping
+                            </p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="post">
+                        <img class="thumbnail" src="images/membership site.jpg" alt="">
+                        <div class="post-preview">
+                            <h6 class="post-title"> Membership Website</h6>
+                            <p class="post-intro">Modulized guide for online courses with step by step intructions</p>
+                            <a href="#">Read More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form action="" id="contact-form">
+                <label for="">Name</label>
+                <input type="text" class="input-field" name="name">
+
+                <label for="">Subject</label>
+                <input type="text" class="input-field" name="subject">
+
+                <label for="">Email</label>
+                <input type="text" class="input-field" name="email">
+
+                <label for="">Message</label>
+                <textarea type="text" class="input-field" name="message"></textarea>
+
+
+
+                <input type="submit" value="Send" id="submit-btn">
+            </form>
         </div>
     </section>
-
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
